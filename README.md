@@ -45,4 +45,17 @@ To run the PHP contact form application on your local machine, follow these step
 1. Fill out the form with your name, email, and message.
 2. Click the "Submit" button to submit the form.
 3. You will receive a success message if the form submission is successful.
-4. The submitted data will be saved to a file named `contacts.txt` in the `php_contact_form` directory.
+4. The submitted data will be saved to a file named `contacts.txt` in the `/var/www/html` directory.
+5. Run following commands to verify submitted data in the file,
+
+- ```bash
+   docker exec -it <container-id> /bin/bash
+  ```
+
+- ```bash
+   ls
+  ```
+
+- ```bash
+   cat contacts.txt
+  ```
